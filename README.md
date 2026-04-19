@@ -42,7 +42,7 @@ java Main
 
 ---
 
-## ▶️ Usage
+##  Usage
 
 1. Start the program:
 
@@ -90,7 +90,7 @@ java Main
 
 ---
 
-## 📷 File Encryption Guide
+## 📁 File Encryption Guide
 
 ###  Encrypt File
 
@@ -106,7 +106,7 @@ java Main
 
 ---
 
-## ⚠️ Important Notes
+##  Important Notes
 
 * Do NOT use the same file name for input and output
 * Encrypted files cannot be opened directly
@@ -115,7 +115,7 @@ java Main
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 * DESUtil.java → Text encryption/decryption
 * FileUtil.java → File encryption/decryption
