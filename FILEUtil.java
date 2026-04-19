@@ -6,45 +6,44 @@ import java.io.FileOutputStream;
 public class FileUtil {
 
     public static void encryptFile(String inputFile, String outputFile, SecretKey key) throws Exception {
-        Cipher cipher = Cipher.getInstance("DES");
+        Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
         cipher.init(Cipher.ENCRYPT_MODE, key);
 
         FileInputStream fis = new FileInputStream(inputFile);
         FileOutputStream fos = new FileOutputStream(outputFile);
 
-        byte[] buffer = new byte[64];
-        int bytesRead;
+        CipherOutputStream cos = new CipherOutputStream(fos, cipher);
 
-        while ((bytesRead = fis.read(buffer)) != -1) {
-            byte[] output = cipher.update(buffer, 0, bytesRead);
-            if (output != null) fos.write(output);
-        }
+byte[] buffer = new byte[4096];
+int bytesRead;
 
-        byte[] finalBytes = cipher.doFinal();
-        if (finalBytes != null) fos.write(finalBytes);
+while ((bytesRead = fis.read(buffer)) != -1) {
+    cos.write(buffer, 0, bytesRead);
+}
+
+cos.close();
 
         fis.close();
         fos.close();
     }
 
     public static void decryptFile(String inputFile, String outputFile, SecretKey key) throws Exception {
-        Cipher cipher = Cipher.getInstance("DES");
+Cipher cipher = Cipher.getInstance("DES/ECB/PKCS5Padding");
         cipher.init(Cipher.DECRYPT_MODE, key);
 
         FileInputStream fis = new FileInputStream(inputFile);
         FileOutputStream fos = new FileOutputStream(outputFile);
 
-        byte[] buffer = new byte[64];
-        int bytesRead;
+        CipherOutputStream cos = new CipherOutputStream(fos, cipher);
 
-        while ((bytesRead = fis.read(buffer)) != -1) {
-            byte[] output = cipher.update(buffer, 0, bytesRead);
-            if (output != null) fos.write(output);
-        }
+byte[] buffer = new byte[4096];
+int bytesRead;
 
-        byte[] finalBytes = cipher.doFinal();
-        if (finalBytes != null) fos.write(finalBytes);
+while ((bytesRead = fis.read(buffer)) != -1) {
+    cos.write(buffer, 0, bytesRead);
+}
 
+cos.close();
         fis.close();
         fos.close();
     }
