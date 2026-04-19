@@ -144,7 +144,7 @@ java Main
 
 ### Decrypt File
 
-
+<img src = "https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/18b4d53c880fb68a6d05e67f8310a9c0b2115bba/screenshots/Decrypt%20File.jpg" width = "500">
 
 ---
 
