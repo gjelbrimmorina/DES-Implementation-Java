@@ -5,7 +5,22 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        SecretKey key = DESUtil.generateKey();
+        SecretKey key;
+
+        System.out.println("1. Generate new key");
+        System.out.println("2. Load existing key");
+
+    int keyChoice = scanner.nextInt();
+    scanner.nextLine();
+
+if (keyChoice == 1) {
+    key = DESUtil.generateKey();
+    KeyUtil.saveKey(key, "secret.key");
+    System.out.println("Key generated and saved.");
+} else {
+    key = KeyUtil.loadKey("secret.key");
+    System.out.println("Key loaded.");
+}
 
         while (true) {
             System.out.println("\n--- DES MENU ---");
