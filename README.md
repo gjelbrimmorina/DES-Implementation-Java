@@ -140,7 +140,7 @@ java Main
 
 ### Encrypt File
 
-
+<img src = "https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/e2cad941ab6ee78166fcb4062aa3b74f0d2398ed/screenshots/Encrypt%20File.jpg" width = "500">
 
 ### Decrypt File
 
