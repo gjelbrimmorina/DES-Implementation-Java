@@ -66,7 +66,7 @@ java Main
 
 ## 🔤 Text Encryption Guide
 
-### 🔐 Encrypt Text
+###  Encrypt Text
 
 1. Choose option:
 
@@ -78,7 +78,7 @@ java Main
 
 ---
 
-### 🔓 Decrypt Text
+###  Decrypt Text
 
 1. Choose option:
 
@@ -92,14 +92,14 @@ java Main
 
 ## 📷 File Encryption Guide
 
-### 🔐 Encrypt File
+###  Encrypt File
 
 * Input: original file (e.g. `photo.jpg`)
 * Output: encrypted file (e.g. `encrypted.dat`)
 
 ---
 
-### 🔓 Decrypt File
+###  Decrypt File
 
 * Input: encrypted file (`encrypted.dat`)
 * Output: restored file (e.g. `photo_decrypted.jpg`)
@@ -148,7 +148,7 @@ java Main
 
 ---
 
-## 🔐 Security Note
+##  Security Note
 
 DES is considered insecure today due to its short key length and vulnerability to brute-force attacks.
 
@@ -156,11 +156,7 @@ DES is used in this project for educational purposes only.
 
 ---
 
-## 👥 Group
-
-Group 7
-
-## ✍️ Authors
+##  Authors
 
 - Gjelbrim Morina
 - Arbenit Krasniqi 
