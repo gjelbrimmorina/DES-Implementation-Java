@@ -128,7 +128,7 @@ java Main
 
 ### Main Menu
 
-
+![Menu](https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/416cfa8ff297dbceb99a35cc6110eea4c06d816a/screenshots/Main%20Menu.jpg)
 
 ### Encrypt Text
 
