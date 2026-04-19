@@ -162,5 +162,5 @@ Group 7
 
 ## ✍️ Authors
 
-Gjelbrim Morina
-Arbenit Krasniqi
+- Gjelbrim Morina
+- Arbenit Krasniqi 
