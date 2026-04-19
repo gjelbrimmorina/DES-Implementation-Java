@@ -132,11 +132,11 @@ java Main
 
 ### Encrypt Text
 
-<img src = "https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/23829101eb5ccecefcbd57c803593622042b77e8/screenshots/Encrypt%20Text.jpg" widht = "600">
+<img src = "https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/23829101eb5ccecefcbd57c803593622042b77e8/screenshots/Encrypt%20Text.jpg" width = "500">
 
 ### Decrypt Text
 
-
+<img src = "https://github.com/gjelbrimmorina/DES-Implementation-Java/blob/ba456eb42e481764b06e88abfa113182be463f86/screenshots/Decrypt%20Text.jpg" width = "500">
 
 ### Encrypt File
 
